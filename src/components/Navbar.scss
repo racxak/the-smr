@@ -1,0 +1,106 @@
+$primary-color: #333;
+
+%a-style {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 8rem;
+  position: sticky;
+  top: 0;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2rem;
+    color: white;
+    display: none;
+
+    @media (max-width: 680px) {
+      display: block;
+    }
+  }
+
+  .logo {
+    margin-left: 3rem;
+    font-weight: bold;
+    text-align: start;
+    a {
+      @extend %a-style;
+    }
+    @media (max-width: 680px) {
+    align-self: flex-start;
+    margin: 1.5rem; 
+    }
+  }
+  
+  ul {
+    display: flex;
+    margin-right: 3rem;
+    
+    @media (max-width: 680px) {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+      margin-right: 0; 
+      padding-left: 0;
+      
+      &.open {
+        display: flex; 
+      }
+    }
+
+    a{
+      @extend %a-style;
+  
+      &:not(.active):hover {
+         border-bottom: 1px solid $primary-color;
+      }
+   
+      @media (max-width: 680px) {
+        margin: 0.25rem 0; 
+      }
+    }
+    
+  }
+
+  li {
+    font-size: 1rem;
+    color: white;
+    margin: 1.5rem;
+    list-style: none;
+    
+    @media (max-width: 680px) {
+      align-self: center;
+      width: auto;
+      text-align: center;
+      margin: 1rem 0; 
+    }
+    
+
+
+  .active {
+    border-bottom: 1px solid white;
+  }
+
+  .hover:hover {
+    border-bottom: 1px solid $primary-color;
+  }
+}
+}
