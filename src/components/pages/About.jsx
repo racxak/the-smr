@@ -1,7 +1,4 @@
 export default function About(){
-  return(<>
-  
-
-  
-  </>);
+  return(<div>
+  </div>);
 };

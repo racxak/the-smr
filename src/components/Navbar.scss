@@ -63,6 +63,9 @@ $primary-color: #333;
       
       &.open {
         display: flex; 
+        background-color: rgba(0, 0, 0, 0.9);
+
+        height: 100vh;
       }
     }
 
@@ -81,11 +84,11 @@ $primary-color: #333;
   }
 
   li {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: white;
     margin: 1.5rem;
     list-style: none;
-    
+    font-family: 'Inter', sans-serif;
     @media (max-width: 680px) {
       align-self: center;
       width: auto;

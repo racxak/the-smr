@@ -1,0 +1,59 @@
+$border-color: #fff; 
+$text-color: #fff; 
+$background-color: #000;
+$placeholer-color: #BBBBBB;
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: start;
+ 
+  h1 {
+    text-align: center ;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  label{
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $border-color;
+    color: $text-color;
+    font-size: 0.9rem;
+
+    &::placeholder {
+      color: $placeholer-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea {
+    height: 4rem; 
+  }
+
+  button {
+    padding: 0.5rem 2rem;
+    color: $text-color;
+    background-color: transparent;
+    border: 1px solid $border-color;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $text-color;
+      color: $background-color;
+    }
+  }
+}
