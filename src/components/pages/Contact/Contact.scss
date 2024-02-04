@@ -2,6 +2,7 @@ $border-color: #fff;
 $text-color: #fff; 
 $background-color: #000;
 $placeholer-color: #BBBBBB;
+
 .contact-form {
   max-width: 500px;
   margin: 2rem auto;
@@ -42,18 +43,4 @@ $placeholer-color: #BBBBBB;
     height: 4rem; 
   }
 
-  button {
-    padding: 0.5rem 2rem;
-    color: $text-color;
-    background-color: transparent;
-    border: 1px solid $border-color;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease, color 0.3s ease;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $text-color;
-      color: $background-color;
-    }
-  }
 }
