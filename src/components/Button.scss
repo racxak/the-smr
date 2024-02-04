@@ -1,0 +1,18 @@
+$text-color: #fff; 
+$border-color: #fff; 
+$background-color: #000;
+
+button {
+  padding: 0.5rem 2rem;
+  color: $text-color;
+  background-color: transparent;
+  border: 1px solid $border-color;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $text-color;
+    color: $background-color;
+  }
+}
