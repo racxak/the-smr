@@ -2,12 +2,32 @@ $border-color: #fff;
 $text-color: #fff; 
 $background-color: #000;
 $placeholer-color: #BBBBBB;
+$link-color: rgb(255, 100, 3);
 
-.contact-form {
+.form {
   max-width: 500px;
   margin: 2rem auto;
   padding: 2rem;
   text-align: start;
+
+  .form-buttons-layout{
+    display: flex;
+    justify-content: space-between;
+     
+    span{
+      font-size: small;
+      align-self: end;
+
+      a {
+        color: $link-color;
+        text-decoration: none;
+
+        &:hover{
+          color: darken($link-color, $amount: 10)
+        }
+      }
+    }
+  }
  
   h1 {
     text-align: center ;

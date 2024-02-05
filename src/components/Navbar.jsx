@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {NavLink, Link} from "react-router-dom"
 import { CiMenuBurger } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
 import "./Navbar.scss"
 
 export default function Navbar(){
@@ -16,6 +17,8 @@ export default function Navbar(){
       <li> <NavLink to="/projects">Projects</NavLink></li>
       <li> <NavLink to="/contact">Contact</NavLink></li>
       <li> <NavLink to="/cart">Cart</NavLink></li>
+      <li> <NavLink to="/login"><CiUser className="user"/></NavLink></li>
+
     </ul> 
   </nav>);
 };

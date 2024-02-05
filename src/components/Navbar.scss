@@ -96,7 +96,11 @@ $primary-color: #333;
       margin: 1rem 0; 
     }
     
-
+  .user{
+      width: 1.5rem;
+      height: 1.5rem;
+      padding-top: 0;
+  }  
 
   .active {
     border-bottom: 1px solid white;
@@ -106,4 +110,5 @@ $primary-color: #333;
     border-bottom: 1px solid $primary-color;
   }
 }
+
 }
