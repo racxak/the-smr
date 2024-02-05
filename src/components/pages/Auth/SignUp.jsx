@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import usePasswordToogle from "../../../hooks/usePasswordToogle";
 
 export default function SignUp () {
+  const [InputType, Icon] = usePasswordToogle();
+
 	return (
     <div>
     <form className="form">
@@ -12,8 +15,11 @@ export default function SignUp () {
 				></input>
 
 				<label> Hasło </label>
+        <div className="password-container">
 				<input type="password" required placeholder="**********"
 				></input>
+         <span className="password-toggle-icon">{Icon}</span>
+        </div>
     
     <div className="form-buttons-layout">
     <span>Already have an account?
