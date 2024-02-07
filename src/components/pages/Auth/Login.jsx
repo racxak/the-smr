@@ -3,7 +3,7 @@ import "../Form.scss"
 import { Link } from "react-router-dom";
 import usePasswordToogle from "../../../hooks/usePasswordToogle";
 
-export default function Login () {
+export default function Login ({changeForm}) {
   const [InputType, Icon] = usePasswordToogle();
 
 	return (
@@ -27,7 +27,7 @@ export default function Login () {
         </div>
 
       <div className="form-buttons-layout">
-      <span>You dont have an account yet? <Link to="/sign-up">Click here to register</Link> </span>
+      <span>You dont have an account yet? <button onClick={()=>changeForm("register")}> Click here to register </button></span>
       <button type="submit">
 
 					Sign in

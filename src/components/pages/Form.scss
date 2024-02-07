@@ -12,7 +12,8 @@ $link-color: rgb(255, 100, 3);
 
   .password-container {
     position: relative; 
-
+    margin-bottom: 1rem;
+    
     .password-toggle-icon {
       position: absolute; 
       z-index: 1000;
@@ -31,12 +32,17 @@ $link-color: rgb(255, 100, 3);
       font-size: small;
       align-self: end;
 
-      a {
+      button {
+        background-color: transparent !important;
+        border: none;
+        padding: 0!important;
         color: $link-color;
         text-decoration: none;
+        text-transform: none;
 
         &:hover{
-          color: darken($link-color, $amount: 10)
+          color: darken($link-color, $amount: 10);
+        text-decoration: underline;
         }
       }
     }

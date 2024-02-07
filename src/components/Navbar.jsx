@@ -17,7 +17,7 @@ export default function Navbar(){
       <li> <NavLink to="/projects">Projects</NavLink></li>
       <li> <NavLink to="/contact">Contact</NavLink></li>
       <li> <NavLink to="/cart">Cart</NavLink></li>
-      <li> <NavLink to="/login"><CiUser className="user"/></NavLink></li>
+      <li> <NavLink to="/auth"><CiUser className="user"/></NavLink></li>
 
     </ul> 
   </nav>);
