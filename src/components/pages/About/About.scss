@@ -1,0 +1,25 @@
+#about {
+  
+  display: block;
+  font-family: "Inter", sans-serif;
+
+  #right{
+    text-align: end;
+     padding-left: 5rem;
+     max-width: 700px;
+     margin: 10rem auto 4rem auto;
+     @media(max-width:880px ){
+      margin: 4rem 2rem;
+     }
+  }
+  #left{
+    padding-right: 5rem;
+    max-width: 700px;
+    margin: 10rem auto 4rem auto;
+    @media(max-width:880px ){
+      margin: 4rem 2rem;
+     }
+  } 
+
+
+}
